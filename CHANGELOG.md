@@ -185,6 +185,7 @@ Changelog established.
 - Rendering rehauled to support WGPU/WGSL renderer. [#215](https://github.com/gpui-ce/gpui-ce/pull/215)
   - Added feature flags `gpui_apple/runtime_shaders`, `gpui_macos/runtime_shaders`, `gpui_platform/runtime_shaders`
   - Linux/FreeBSD screen capture was incorporated at some point.
+- `gpui/wayland` and `gpui/x11` now toggle the corresponding `gpui_platform` flags, so Linux builds can target either backend or both.  [#379](https://github.com/gpui-ce/gpui-ce/pull/379)
 
 ### Removals
 
@@ -203,6 +204,7 @@ Changelog established.
 - Duplicate characters during web IME composition. [#236](https://github.com/gpui-ce/gpui-ce/pull/236)
 - Element opacity now applies to all descendants as one group. [#330](https://github.com/gpui-ce/gpui-ce/pull/330)
 - Incorrect RTL glyph ordering in `EditableText`. [#267](https://github.com/gpui-ce/gpui-ce/pull/267)
+- Allow for Linux devs to build with x11 or wayland, or both. [#373](https://github.com/gpui-ce/gpui-ce/issues/373#issue-5981765481)
 
 ### Security Changes
 
